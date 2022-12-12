@@ -1,0 +1,18 @@
+static void Main(string[] args)
+ {
+ string[] name = new string[10];
+ float[] score = new float[10];
+ byte i;
+ for (i = 0; i <10; i++)
+ {
+ Console.Write("\nEnter Student {0}th Name: ",i);
+ name[i] = Console.ReadLine();
+ Console.Write("Enter Student {0}th Score: ",i);
+ score[i] = float.Parse(Console.ReadLine());
+ }
+ Console.Clear();
+ for (i = 0; i <10; i++)
+ if (score[i] == 20)
+ Console.WriteLine("Score {0} is 20 . ", name[i]);
+ Console.ReadKey();
+ }
